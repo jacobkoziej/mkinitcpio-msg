@@ -1,0 +1,13 @@
+#!/bin/sh
+
+build() {
+	add_file /etc/mkinitcpio-msg
+	add_runscript
+}
+
+help() {
+	echo << HELPEOF
+Display a message in early boot.
+Modify /etc/mkinitcpio-msg to set a message.
+HELPEOF
+}
