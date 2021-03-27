@@ -6,7 +6,7 @@ build() {
 }
 
 help() {
-	echo << HELPEOF
+	cat << HELPEOF
 Display a message in early boot.
 Modify /etc/mkinitcpio-msg to set a message.
 HELPEOF
