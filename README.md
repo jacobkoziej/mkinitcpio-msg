@@ -80,7 +80,7 @@ The output on the screen will then look something like this:
 :: running early hook [udev]
 Starting version XXX.Y-Z-arch
 :: running hook [udev]
-:: Triggering uevents..
+:: Triggering uevents...
 :: running hook [keymap]
 :: Loading keymap...done.
 :: running hook [encrypt]
