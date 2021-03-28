@@ -11,6 +11,8 @@ Then edit `/etc/mkinitcpio-msg` to set your custom message.
 
 Don't forget to run `mkinitcpio -P` to regenerate all your initial ramdisks.
 
+Arch users can also find this hack in the AUR as [mkinitcpio-msg-git].
+
 
 ## Usage
 
@@ -107,3 +109,4 @@ Distributed under the [GPLv3].
 [GPLv3]: LICENSE.md
 [mkinitcpio-archlogo]: https://github.com/eworm-de/mkinitcpio-archlogo
 [mkinitcpio-bootmsg]: https://github.com/ntruessel/mkinitcpio-bootmsg
+[mkinitcpio-msg-git]: https://aur.archlinux.org/packages/mkinitcpio-msg-git
