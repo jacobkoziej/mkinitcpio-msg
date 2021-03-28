@@ -94,7 +94,7 @@ Starting version XXX.Y-Z-arch
 I was growing tired of keeping a post-it note on my laptop with my contact
 information.  One day I thought to myself if it would be possible to display
 this information when loading the initial ramdisk environment.  I managed to
-stumble upon [mkinitcpio-bootmsg] and [mkinitcpio-bootmsg] while browsing the
+stumble upon [mkinitcpio-archlogo] and [mkinitcpio-bootmsg] while browsing the
 AUR, but neither functioned the way I would have liked, so I just decided to
 hack together my own implementation of this simple task.
 
