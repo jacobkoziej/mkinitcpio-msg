@@ -9,6 +9,8 @@ Run `make install` and add `msg` to `HOOKS` in `/etc/mkinitcpio.conf`.
 
 Then edit `/etc/mkinitcpio-msg` to set your custom message.
 
+Don't forget to run `mkinitcpio -P` to regenerate all your initial ramdisks.
+
 
 ## Usage
 
