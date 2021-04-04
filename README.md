@@ -47,9 +47,9 @@ To achieve this, I'll have to do one of two things, firstly in
 `base` hook.  What this will do is load the message immediately after the
 initialization of the ramdisk environment.
 
-Secondly I'll have to get rid of the message that says: `:: running early hook
-[msg]`. I can do this by clearing the screen with the `[2J` standard control
-sequence.
+Secondly, I'll have to get rid of the message that says: `:: running early hook
+[msg]`.  I can do this by clearing the screen and setting the cursor to the
+home position with the `[2J` and `[H` standard control sequences.
 
 For this to work, the escape code needs to be interpreted correctly and not
 literally, so editing `/etc/mkinitcpio-msg` with a standard text editor won't
@@ -57,7 +57,7 @@ work.  One way of circumventing this is by using the `echo` command.  I could
 then store my message in a temporary file called `msg` and run the following:
 
 ```sh
-echo -n -e "\e[2J" > /etc/mkinitcpio-msg
+echo -n -e "\e[2J\e[H" > /etc/mkinitcpio-msg
 cat msg >> /etc/mkinitcpio-msg
 mkinitcpio -P
 ```
